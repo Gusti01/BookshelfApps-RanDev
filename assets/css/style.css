@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  top: 0;
+  padding: 0;
+  left: 0;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #136aba;
+}
+
+.header {
+  min-height: 100vh;
+  /* border: 1px solid red; */
+  background-image: url("../img/Banner1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.flex-logo {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #136aba;
+}
+
+.italic {
+  font-style: italic;
+}
+.logo {
+  margin: 2rem 1rem 2rem 3.5rem;
+  height: 50px;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #dda029;
+  width: 40%;
+  margin-top: 2.5rem;
+  padding: 3.5rem;
+}
+.btn-try {
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50px;
+  font-size: smaller;
+  background-color: #dda029;
+}
+.btn-try:hover {
+  border: 1.5px solid #dda029;
+  color: #dda029;
+  transition: 0.2s ease-in-out;
+  background-color: #fff;
+}
+.content {
+  min-height: 120vh;
+}
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.container {
+  width: 26%;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 5px;
+  height: fit-content;
+}
+.item {
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.item > .inner h3 {
+  margin-bottom: unset;
+}
+
+.item > .inner p {
+  margin-top: 5px;
+}
+.form {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.shadow {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+.input-form {
+  border: 1px solid #136aba;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+input[type="text"],
+input[type="date"],
+.btn-submit:focus {
+  outline: none;
+}
+.btn-submit {
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 12px 24px;
+  border: 1px solid #136aba;
+  color: #136aba;
+  background-color: #fff;
+  font-size: 14px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.check-button {
+  width: 30px;
+  height: 30px;
+
+  background: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+.edit-button {
+  width: 30px;
+  height: 30px;
+  background: url("../img/edit.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+.trash-button {
+  width: 30px;
+  height: 30px;
+
+  background: url("../img/delete.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+.undo-button {
+  width: 30px;
+  height: 30px;
+
+  background: url("../img/rotate-ccw.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.edit-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.edit-form button {
+  padding: 8px 15px;
+  background-color: #dda029;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-form.show {
+  animation: fadeIn 0.3s ease-in-out;
+  display: block;
+}
+
+.footer {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  background-color: #136aba;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-direction: column;
+}
+.w-half {
+  width: 50%;
+  border: 2px solid #dda029;
+  border-radius: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.title {
+  color: #136aba;
+  font-size: 14px;
+  font-weight: bold;
+}
