@@ -31,13 +31,11 @@ function loadDataFromStorage() {
 
   if (data !== null) {
     for (const book of data) {
-      book.year = parseInt(book.year);
       books.push(book);
     }
   }
 
   document.dispatchEvent(new Event(RENDER_EVENT));
-  console.log(books);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -66,7 +64,9 @@ document.addEventListener(SAVED_EVENT, function () {
 function addBook() {
   const textTitle = document.getElementById("title").value;
   const textAuthor = document.getElementById("author").value;
-  const year = document.getElementById("year").value;
+  const yearString = document.getElementById("year").value;
+
+  const year = parseInt(yearString, 10);
 
   const generatedID = generateId();
   const bookObject = generateBookObject(
